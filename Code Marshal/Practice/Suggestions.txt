@@ -1,0 +1,5 @@
+*Try to use C++
+*Try to use #include<bits/stdc++.h> header file
+*Try to use scanf and printf in stead of cin and cout
+*Try to use long long int
+*Saw the previous contest code
