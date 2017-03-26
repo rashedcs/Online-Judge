@@ -1,2 +1,0 @@
-http://www.dabblepoint.com/second-largest-element-in-binary-search-tree-bst
-http://sourcecodemania.com/operations-on-binary-search-trees-bst/
