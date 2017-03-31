@@ -1,3 +1,5 @@
+ //Link :  https://www.codechef.com/problems/TIC04
+
   #include<bits/stdc++.h>
   using namespace std;
 
@@ -14,7 +16,7 @@
      return true;
   }
 
- void nqueen(int row, int n)
+  void nqueen(int row, int n)
   {
      for(int i=1;i<=n;i++)
      {
