@@ -12,17 +12,17 @@ int main()
 
     int num[10];
 
-    for(int i=0; i<n; i++)  cin>>words[i];
-
-    for(int j=0; j<n; j++)
+    for(int i=0; i<n; i++)
     {
-        t1 = words[j];
+      cin>>words[i];
+    }
 
-        for(int i=0; i<n; i++)
+    for(int i=0; i<n; i++)
+    {
+        for(int j=0; j<n; j++)
         {
-            if(t1==words[i])  num[j]++;
+            if(words[i]==words[j])  num[j]++;
         }
-
     }
 
     maxi = num[0];
@@ -37,10 +37,11 @@ int main()
 		}
 	}
 
-	  cout<<words[index]<<endl;
+    cout<<words[index]<<endl;
 
     return 0;
 }
+
 
 
 
