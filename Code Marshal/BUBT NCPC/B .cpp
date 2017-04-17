@@ -29,14 +29,14 @@ int main()
     maxi = num[0];
     index = 0;
 
-	for(int i=0; i<n; i++)
+    for(int i=0; i<n; i++)
+    {
+	if(maxi<num[i])
 	{
-		if(maxi<num[i])
-		{
-			maxi=num[i];
-			index = i;
-		}
+	   maxi=num[i];
+	   index = i;
 	}
+    }
 
     cout<<words[index]<<endl;
 
