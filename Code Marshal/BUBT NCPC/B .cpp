@@ -1,3 +1,4 @@
+//links : http://www.worldbestlearningcenter.com/tips/Count-duplicate-words-in-a-string.htm
 #include<bits/stdc++.h>
 using namespace std;
 
