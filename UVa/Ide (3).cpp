@@ -86,8 +86,9 @@ int main()
                 sscanf(str, "%s", grid[p++]);
              }
          }
-        if(tc>0)  printf("\n");
-      }
+     if(tc>0)  printf("\n");
+    }
+  
     return 0;
 }
 
