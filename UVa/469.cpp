@@ -66,29 +66,25 @@ int main()
 
          while(gets(str) && strlen(str)>0)
          {
-
             if (str[0] == 'L' || str[0] == 'W')
             {
                  sscanf(str, "%s", grid[p++]);
             }
-        
             else
             {
                 sscanf(str, "%d %d", &sx, &sy);
                 memset(vis, 0, sizeof(vis));
-
                 sum = 0;
-
+              
                 n =  sizeof grid/sizeof (grid[0]);
                 m =  sizeof grid[0]/sizeof grid[0][0];
 
                 bfs(n, m, sx-1, sy-1);
 
                 printf("%d\n",sum);
-             }
-
+            }
          }
-      if(tc>0)  printf("\n");
+        if(tc>0)  printf("\n");
     }
 
     return 0;
