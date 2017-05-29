@@ -87,8 +87,7 @@ int main()
             }
         }
         
-       if(tc)
-            puts("");
+       if(tc>0)   cout<<endl;;
      
     }
     return 0;
