@@ -45,6 +45,7 @@ int main()
         }
         printf("%d %d %c\n",x+1, y+1, str[dir]);
         if (tc) printf("\n");
+        //if (tc>0) printf("\n");
       }
 
     return 0;
