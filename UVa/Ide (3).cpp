@@ -61,12 +61,12 @@ int main()
     scanf("%d ", &tc);
     while(tc--) 
     {
-        memset(grid, 0, sizeof(grid));
-        int p = 0;
-        while(gets(str))
-        {
-            if(str[0] == '\0')     break;
-            
+         memset(grid, 0, sizeof(grid));
+         int p = 0;
+      
+         while(gets(str)&&str[0]!='\0')
+         {
+            // if(str[0] == '\0')     break;
             if(str[0] != 'W' && str[0] != 'L') 
             {
                 sscanf(str, "%d %d", &sx, &sy);
@@ -80,16 +80,14 @@ int main()
                 bfs(n, m, sx-1, sy-1);
                 
                 printf("%d\n",sum);
-            } 
-            else 
-            {
+             } 
+             else 
+             {
                 sscanf(str, "%s", grid[p++]);
-            }
-        }
-        
-       if(tc>0)   cout<<endl;;
-     
-    }
+             }
+         }
+        if(tc>0)  printf("\n");
+      }
     return 0;
 }
 
