@@ -33,7 +33,7 @@ void bfs(int n, int m, int sx, int sy)
         int r = Q.front().first;
         int c = Q.front().second;
 
-        Q.pop();
+        Q.pop(); 
         sum++;
 
         for(int i=0;i<8;i++)
