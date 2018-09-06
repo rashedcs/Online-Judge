@@ -36,7 +36,7 @@ int main()
                 a =  x+dr[dir];
                 b =  y+dc[dir];
 
-                if(grid[a][b]== ' ')
+                if(grid[a][b]== ' ') 
                 {
                    x = a;
                    y = b;
