@@ -30,5 +30,5 @@ int main()
         cout<<word [i]<<"\t\t";
      }
 
-    return 0;
+    return 0; 
 }
