@@ -23,7 +23,7 @@ To do list :
 496
 499
 
-After  : 424
+After  : 488 424
 
 Wrong answer : 494
 
