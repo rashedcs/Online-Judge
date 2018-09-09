@@ -8,27 +8,27 @@ void solu(int ** grid , int row, int col)
 
           for(int i=0; i<row; i++)
           {
-             for(int j=0; j<col; j++)
-            {
+              for(int j=0; j<col; j++)
+              {
                   P[i].first += grid[i][j];
-              P[i].second += grid[j][i];
-            }
-          }
+                  P[i].second += grid[j][i];
+              }
+           }
           
     	   for(int k=0; k<row; k++)
-    		 {
-            if(P[k].first%2!=0)
-            {
-                r++, tr = k+1;
-            }
-            if(P[k].second%2!=0)
-            {
-                c++, tc = k+1;
-            }
-    		}
-	    	if(r== 0 && c==0) printf("OK\n");
-		    else if(r==1 && c==1) printf("Change bit (%d,%d)\n", tr, tc);
-		    else  printf("Corrupt\n");
+    	   {
+		    if(P[k].first%2!=0)
+		    {
+			r++, tr = k+1;
+		    }
+		    if(P[k].second%2!=0)
+		    {
+			c++, tc = k+1;
+		    }
+    	   }
+	   if(r== 0 && c==0) printf("OK\n");
+	   else if(r==1 && c==1) printf("Change bit (%d,%d)\n", tr, tc);
+           else  printf("Corrupt\n");
 }
 
 int main()
@@ -36,7 +36,7 @@ int main()
     int n, row , col;
     while(scanf("%d", &n)==1 && n) 
     {
-	      row=col=n;
+        row=col=n;
 	    
         /*Dynamic memory allocation start */
         int** grid = new int*[row];
@@ -55,5 +55,6 @@ int main()
         }
         solu(grid, row, col);
         free(grid);
-	  }
+     }
+     return 0;
 }
