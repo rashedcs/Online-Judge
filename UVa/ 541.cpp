@@ -28,7 +28,7 @@ void solu(int ** grid , int row, int col)
     	   }
 	   if(r== 0 && c==0) printf("OK\n");
 	   else if(r==1 && c==1) printf("Change bit (%d,%d)\n", tr, tc);
-           else  printf("Corrupt\n");
+          else  printf("Corrupt\n");
 }
 
 int main()
