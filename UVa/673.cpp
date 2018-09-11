@@ -40,4 +40,5 @@ int main(){
         if(solve(str)==false) printf("No\n");
         else printf("Yes\n");
     }
+    return 0;
 }
