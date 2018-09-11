@@ -20,14 +20,14 @@ int main()
     
     while(cin>>n && n)
     {
+        mov = 0;
+            
         for(int i=0; i<n; i++)
         {
             scanf("%d", &arr[i]);
         }
         
         avg = mean(arr, n);
-
-        mov = 0;
         
         printf("Set #%d\n", ++cnt);
         
