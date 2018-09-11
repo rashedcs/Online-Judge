@@ -15,7 +15,7 @@ bool solve(string str)
            {
                 stk.push(c);
            }
-            else  if(stk.empty()) 
+           else  if(stk.empty()) 
            {
                  return  false;
            }
@@ -25,8 +25,8 @@ bool solve(string str)
            }
 
         }
-        if(stk.empty()==true) return true;
-        else                  return false;
+        if(stk.empty()==false) return false;
+        else                   return true;
 }
 
 int main(){
