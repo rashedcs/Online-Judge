@@ -31,13 +31,13 @@ bool solve(string str)
 
 int main(){
     int tc;
-    scanf("%d ",&t);
+    scanf("%d ",&tc);
     string str;
 
     for(int i=1; i<=tc; i++)
     {
         getline(cin,str);
-        if(solve(s)==false) printf("No\n");
+        if(solve(str)==false) printf("No\n");
         else printf("Yes\n");
     }
 }
