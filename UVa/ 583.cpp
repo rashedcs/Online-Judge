@@ -9,7 +9,7 @@ vi  primes;
 void sieve() 
 { 
            bool visit[50000];
-            memset( visit , 0 , sizeof(visit));
+           memset( visit , 0 , sizeof(visit));
         	for( int i=2;i<50000;i++ )
         	{
         	    if(visit[i]==0)
