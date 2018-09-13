@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main()
+{
+    int v, t, ans ;
+    while(cin>>v>>t)
+    {
+        ans=v*2*t ;
+        cout<<ans<<endl ;
+    }
+    return 0;
+}
