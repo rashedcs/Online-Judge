@@ -2,56 +2,48 @@
 using namespace std;
 
 
-string toString(int n)
+string encode(string s)
 {
-  stringstream ss;
-  ss << n;
-  return ss.str();
-}
-
-
-string print(string s)
-{
-         string sub, output = "";
-         if(isdigit(s[0]))
-         {
-                reverse(s.begin(), s.end());
-                int i=0;
-                while(i<s.size())
-                {
-                    if(s[i] == '1')
-                    {
-                         sub = s.substr(i,3);
-                         output += static_cast<char>(atoi(sub.c_str()));
-                         i += i+3;
-                    }
-                    else
-                    {
-                         sub = s.substr(i,2);            
-                         output += static_cast<char>(atoi(sub.c_str()));
-                         i += 2;
-                    }
-                }
-                return output;
-          }
-          else
-          {
+                string sub, answer="";
+                int v=0;
                 for(int i=0; i<s.size(); i++)
                 {
-                    output += toString( (int)s[i] );
+                      sub  = to_string(s[i]);
+                      answer += sub;
                 }
-                reverse(output.begin(), output.end());
-
-                return output;     
-          }
+                reverse(answer.begin(), answer.end());
+                
+                return answer;   
 }
 
-int main()
+
+string decode(string s)
+{
+    reverse(s.begin(), s.end());
+    string sub, output="";
+    
+    int l=0, i=0;
+    while(i<s.size())
+    {
+        (s[i]=='1')? l=3:l=2;
+        sub = s.substr(i,l);            
+        output += static_cast<char>(atoi(sub.c_str()));
+        i += l;
+    }
+    return output;
+}
+
+
+
+ int main()
 {
     string str;
     while(getline(cin,str))
     {
-           cout<<print(str)<<endl;
+        if(isdigit(str[0]))
+           cout<<decode(str)<<endl;
+        else 
+           cout<<encode(str)<<endl;
     }
     return 0;
 }
