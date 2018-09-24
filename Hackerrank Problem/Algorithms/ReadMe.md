@@ -1,1 +1,0 @@
-Hckerrank Algorithm Solution
